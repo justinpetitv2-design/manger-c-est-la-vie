@@ -1,0 +1,426 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Atelier Sève — Chef à domicile & Traiteur</title>
+  <meta name="description" content="Atelier Sève : chef à domicile et traiteur. 3 menus, personnalisation, service humain et élégant. Réservation et devis en ligne." />
+  <meta name="robots" content="index,follow" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Atelier Sève — Chef à domicile & Traiteur" />
+  <meta property="og:description" content="3 menus personnalisables, cuisine sur-mesure chez vous ou en réception. Demande de réservation et devis." />
+  <meta property="og:type" content="website" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <a class="skip" href="#main">Aller au contenu</a>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a class="brand" href="#top" aria-label="Accueil">
+        <span class="brand__mark" aria-hidden="true">◈</span>
+        <span class="brand__name">Atelier Sève</span>
+      </a>
+
+      <div class="lang" aria-label="Choix de la langue">
+        <button class="lang__btn" data-lang="fr" aria-pressed="true">FR</button>
+        <button class="lang__btn" data-lang="en" aria-pressed="false">EN</button>
+        <button class="lang__btn" data-lang="es" aria-pressed="false">ES</button>
+      </div>
+
+      <button class="nav__toggle" aria-expanded="false" aria-controls="nav">Menu</button>
+
+      <nav id="nav" class="nav" aria-label="Navigation principale">
+        <a href="#offres" data-i18n="nav_offers">Offres</a>
+        <a href="#menus" data-i18n="nav_menus">Menus</a>
+        <a href="#chef" data-i18n="nav_chef">Le Chef</a>
+        <a href="#planning" data-i18n="nav_planning">Planning</a>
+        <a href="#galerie" data-i18n="nav_gallery">Galerie</a>
+        <a href="#contact" class="btn btn--small" data-i18n="nav_contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section id="top" class="hero">
+      <div class="container hero__grid">
+        <div class="hero__text">
+          <p class="kicker" data-i18n="hero_kicker">Chef à domicile & Traiteur</p>
+          <h1 data-i18n="hero_title">Une cuisine qui ressemble à vos moments : <span class="accent">humaine</span>, précise, sans chichi.</h1>
+          <p class="lead" data-i18n="hero_lead">
+            Dîner chez vous, réception, brunch, événement d’entreprise : je m’occupe de tout, avec une attention sincère aux goûts, aux allergies, et à l’ambiance.
+          </p>
+
+          <div class="hero__actions">
+            <a class="btn" href="#contact" data-i18n="hero_cta_primary">Demander un devis</a>
+            <a class="btn btn--ghost" href="#menus" data-i18n="hero_cta_secondary">Voir les menus</a>
+          </div>
+
+          <ul class="hero__badges" aria-label="Points clés">
+            <li data-i18n="badge_1">3 menus personnalisables</li>
+            <li data-i18n="badge_2">Service attentif & discret</li>
+            <li data-i18n="badge_3">Chez vous ou en réception</li>
+          </ul>
+        </div>
+
+        <div class="hero__card">
+          <div class="card">
+            <h2 data-i18n="card_info_title">Infos rapides</h2>
+            <dl class="dl">
+              <div>
+                <dt data-i18n="card_area_label">Zone</dt>
+                <dd data-i18n="card_area_value">Île-de-France & alentours (sur demande)</dd>
+              </div>
+              <div>
+                <dt data-i18n="card_delay_label">Réponse</dt>
+                <dd data-i18n="card_delay_value">Sous 24h ouvrées</dd>
+              </div>
+              <div>
+                <dt data-i18n="card_event_label">Types d’événements</dt>
+                <dd data-i18n="card_event_value">Dîners, anniversaires, mariages, entreprises</dd>
+              </div>
+            </dl>
+            <a class="btn btn--small" href="#planning" data-i18n="card_btn">Consulter le planning</a>
+            <p class="small muted" data-i18n="card_note">Astuce : plus tu me donnes d’infos (date, convives, goûts), plus je personnalise.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- OFFRES -->
+    <section id="offres" class="section">
+      <div class="container">
+        <div class="section__head">
+          <h2 data-i18n="offers_title">Deux façons de travailler ensemble</h2>
+          <p class="muted" data-i18n="offers_subtitle">Même exigence, deux formats : chez vous ou en réception.</p>
+        </div>
+
+        <div class="grid2">
+          <article class="card">
+            <h3 data-i18n="offers_home_title">Chef à domicile</h3>
+            <p data-i18n="offers_home_text">
+              Un repas sur-mesure chez vous : je cuisine sur place, je dresse, et je laisse votre cuisine impeccable. Service discret, ambiance chaleureuse.
+            </p>
+            <ul class="list">
+              <li data-i18n="offers_home_li1">Dîner intime (2 à 12 pers.)</li>
+              <li data-i18n="offers_home_li2">Expérience “comme au restaurant”</li>
+              <li data-i18n="offers_home_li3">Allergies et préférences prises au sérieux</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3 data-i18n="offers_catering_title">Traiteur</h3>
+            <p data-i18n="offers_catering_text">
+              Cocktails, buffets, repas assis : je conçois une proposition claire, livrée ou servie, avec une logistique simple et fiable.
+            </p>
+            <ul class="list">
+              <li data-i18n="offers_catering_li1">Réceptions privées & pros</li>
+              <li data-i18n="offers_catering_li2">Option service / sans service</li>
+              <li data-i18n="offers_catering_li3">Devis transparent</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- MENUS -->
+    <section id="menus" class="section section--alt">
+      <div class="container">
+        <div class="section__head">
+          <h2 data-i18n="menus_title">3 menus (personnalisables)</h2>
+          <p class="muted" data-i18n="menus_subtitle">
+            Les intitulés et prix sont indicatifs : on ajuste selon saison, contraintes, et niveau de prestation.
+          </p>
+        </div>
+
+        <div class="grid3">
+          <article class="card card--menu">
+            <h3 data-i18n="menu1_title">Menu Essentiel</h3>
+            <p class="price" data-i18n="menu1_price">À partir de 65€ / pers.</p>
+            <p class="muted" data-i18n="menu1_desc">Entrée • Plat • Dessert</p>
+            <ul class="list">
+              <li data-i18n="menu1_li1">Idéal dîner entre amis</li>
+              <li data-i18n="menu1_li2">1 alternative végétarienne</li>
+              <li data-i18n="menu1_li3">Personnalisation goûts</li>
+            </ul>
+          </article>
+
+          <article class="card card--menu">
+            <h3 data-i18n="menu2_title">Menu Signature</h3>
+            <p class="price" data-i18n="menu2_price">À partir de 95€ / pers.</p>
+            <p class="muted" data-i18n="menu2_desc">2 entrées • Plat • Pré-dessert • Dessert</p>
+            <ul class="list">
+              <li data-i18n="menu2_li1">Rythme “restaurant”</li>
+              <li data-i18n="menu2_li2">Accord boissons en option</li>
+              <li data-i18n="menu2_li3">Dressage soigné</li>
+            </ul>
+          </article>
+
+          <article class="card card--menu">
+            <h3 data-i18n="menu3_title">Menu Expérience</h3>
+            <p class="price" data-i18n="menu3_price">À partir de 135€ / pers.</p>
+            <p class="muted" data-i18n="menu3_desc">Amuse-bouche • 2 entrées • Poisson • Viande • Dessert • Mignardises</p>
+            <ul class="list">
+              <li data-i18n="menu3_li1">Pour célébrations</li>
+              <li data-i18n="menu3_li2">Option service à table</li>
+              <li data-i18n="menu3_li3">Expérience complète</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="note">
+          <strong data-i18n="menus_note_strong">Personnalisation :</strong>
+          <span data-i18n="menus_note_text">allergies, goûts, restrictions, préférences de cuisson, et objectifs (léger, gourmand, festif).</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CHEF -->
+    <section id="chef" class="section">
+      <div class="container">
+        <div class="section__head">
+          <h2 data-i18n="chef_title">Derrière Atelier Sève</h2>
+          <p class="muted" data-i18n="chef_subtitle">Une approche simple : écouter, cuisiner juste, et prendre soin.</p>
+        </div>
+
+        <div class="grid2">
+          <div class="card">
+            <h3 data-i18n="chef_name">Chef Noé Lambert</h3>
+            <p data-i18n="chef_bio">
+              Formé entre bistrots exigeants et maisons de réception, j’ai choisi le format “à domicile” pour remettre l’humain au centre :
+              vos goûts, votre rythme, votre table, votre moment.
+            </p>
+            <ul class="list">
+              <li data-i18n="chef_li1">Cuisine de saison & produits sourcés</li>
+              <li data-i18n="chef_li2">Élégant mais détendu</li>
+              <li data-i18n="chef_li3">Respect des lieux (zéro stress)</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3 data-i18n="chef_values_title">Ce que tu peux attendre</h3>
+            <p data-i18n="chef_values_text">
+              Une proposition claire, un échange simple, et une prestation fiable. Le but : que tu profites, vraiment.
+            </p>
+            <div class="faq">
+              <details>
+                <summary data-i18n="faq1_q">Tu fais aussi des options végétariennes ?</summary>
+                <p class="muted" data-i18n="faq1_a">Oui, et pas “par défaut” : on construit un vrai menu végétarien cohérent.</p>
+              </details>
+              <details>
+                <summary data-i18n="faq2_q">Tu gères les allergies ?</summary>
+                <p class="muted" data-i18n="faq2_a">Oui — je pose les bonnes questions en amont et j’adapte sans compromis.</p>
+              </details>
+              <details>
+                <summary data-i18n="faq3_q">Tu peux gérer un événement entreprise ?</summary>
+                <p class="muted" data-i18n="faq3_a">Oui, du cocktail au repas assis, avec timing et logistique carrés.</p>
+              </details>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PLANNING -->
+    <section id="planning" class="section section--alt">
+      <div class="container">
+        <div class="section__head">
+          <h2 data-i18n="planning_title">Planning (disponibilités type)</h2>
+          <p class="muted" data-i18n="planning_subtitle">
+            Indication générale. Pour bloquer une date : envoie ta demande et je confirme par retour (sous 24h ouvrées).
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="planning">
+            <div class="planning__row">
+              <div class="planning__day" data-i18n="day_mon">Lundi</div>
+              <div class="planning__slots">
+                <span class="pill pill--ok" data-i18n="slot_evening">Soir</span>
+                <span class="pill pill--maybe" data-i18n="slot_lunch">Midi</span>
+              </div>
+            </div>
+            <div class="planning__row">
+              <div class="planning__day" data-i18n="day_tue">Mardi</div>
+              <div class="planning__slots">
+                <span class="pill pill--ok" data-i18n="slot_lunch">Midi</span>
+                <span class="pill pill--ok" data-i18n="slot_evening">Soir</span>
+              </div>
+            </div>
+            <div class="planning__row">
+              <div class="planning__day" data-i18n="day_wed">Mercredi</div>
+              <div class="planning__slots">
+                <span class="pill pill--maybe" data-i18n="slot_lunch">Midi</span>
+                <span class="pill pill--ok" data-i18n="slot_evening">Soir</span>
+              </div>
+            </div>
+            <div class="planning__row">
+              <div class="planning__day" data-i18n="day_thu">Jeudi</div>
+              <div class="planning__slots">
+                <span class="pill pill--ok" data-i18n="slot_lunch">Midi</span>
+                <span class="pill pill--ok" data-i18n="slot_evening">Soir</span>
+              </div>
+            </div>
+            <div class="planning__row">
+              <div class="planning__day" data-i18n="day_fri">Vendredi</div>
+              <div class="planning__slots">
+                <span class="pill pill--maybe" data-i18n="slot_lunch">Midi</span>
+                <span class="pill pill--ok" data-i18n="slot_evening">Soir</span>
+              </div>
+            </div>
+            <div class="planning__row">
+              <div class="planning__day" data-i18n="day_sat">Samedi</div>
+              <div class="planning__slots">
+                <span class="pill pill--no" data-i18n="slot_lunch">Midi</span>
+                <span class="pill pill--ok" data-i18n="slot_evening">Soir</span>
+              </div>
+            </div>
+            <div class="planning__row">
+              <div class="planning__day" data-i18n="day_sun">Dimanche</div>
+              <div class="planning__slots">
+                <span class="pill pill--maybe" data-i18n="slot_lunch">Midi</span>
+                <span class="pill pill--maybe" data-i18n="slot_evening">Soir</span>
+              </div>
+            </div>
+          </div>
+
+          <p class="small muted" style="margin-top:1rem" data-i18n="planning_note">
+            Légende : Disponible / À confirmer / Complet. (Tu pourras remplacer ce planning par un Google Calendar public plus tard.)
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALERIE -->
+    <section id="galerie" class="section">
+      <div class="container">
+        <div class="section__head">
+          <h2 data-i18n="gallery_title">Galerie</h2>
+          <p class="muted" data-i18n="gallery_subtitle">Photos d’ambiance et assiettes. (Placeholders tant que tu n’as pas tes images.)</p>
+        </div>
+
+        <div class="gallery" aria-label="Galerie d’images">
+          <figure class="ph">
+            <div class="ph__img" data-img="assets/01.jpg"></div>
+            <figcaption data-i18n="ph1">Entrée de saison — acidulé & herbacé</figcaption>
+          </figure>
+          <figure class="ph">
+            <div class="ph__img" data-img="assets/02.jpg"></div>
+            <figcaption data-i18n="ph2">Plat signature — jus court, cuisson précise</figcaption>
+          </figure>
+          <figure class="ph">
+            <div class="ph__img" data-img="assets/03.jpg"></div>
+            <figcaption data-i18n="ph3">Dessert — gourmand mais léger</figcaption>
+          </figure>
+          <figure class="ph">
+            <div class="ph__img" data-img="assets/04.jpg"></div>
+            <figcaption data-i18n="ph4">Cocktail — bouchées et verrines</figcaption>
+          </figure>
+          <figure class="ph">
+            <div class="ph__img" data-img="assets/05.jpg"></div>
+            <figcaption data-i18n="ph5">Mise en place — propre et discrète</figcaption>
+          </figure>
+          <figure class="ph">
+            <div class="ph__img" data-img="assets/06.jpg"></div>
+            <figcaption data-i18n="ph6">Table — simple, élégante, chaleureuse</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section section--alt">
+      <div class="container">
+        <div class="section__head">
+          <h2 data-i18n="contact_title">Contact & demande de réservation</h2>
+          <p class="muted" data-i18n="contact_subtitle">Donne-moi le maximum d’infos : date, lieu, convives, menus, allergies.</p>
+        </div>
+
+        <div class="grid2">
+          <div class="card">
+            <h3 data-i18n="contact_direct_title">Contact direct</h3>
+            <p><strong data-i18n="contact_phone_label">Téléphone :</strong> <a href="tel:+33758011234">+33 7 58 01 12 34</a></p>
+            <p><strong>Email :</strong> <a href="mailto:bonjour@atelier-seve.fr">bonjour@atelier-seve.fr</a></p>
+            <p><strong data-i18n="contact_city_label">Base :</strong> Paris (déplacements possibles)</p>
+            <p class="small muted" data-i18n="contact_direct_note">Ces coordonnées sont fictives (tu peux les remplacer quand tu veux).</p>
+          </div>
+
+          <div class="card">
+            <h3 data-i18n="contact_form_title">Formulaire</h3>
+            <form id="requestForm">
+              <div class="field">
+                <label for="name" data-i18n="f_name">Nom</label>
+                <input id="name" name="name" autocomplete="name" required />
+              </div>
+              <div class="field">
+                <label for="email" data-i18n="f_email">Email</label>
+                <input id="email" name="email" type="email" autocomplete="email" required />
+              </div>
+              <div class="field">
+                <label for="service" data-i18n="f_service">Prestation</label>
+                <select id="service" name="service">
+                  <option value="Chef à domicile" data-i18n="opt_home">Chef à domicile</option>
+                  <option value="Traiteur" data-i18n="opt_catering">Traiteur</option>
+                </select>
+              </div>
+              <div class="grid2">
+                <div class="field">
+                  <label for="date" data-i18n="f_date">Date souhaitée</label>
+                  <input id="date" name="date" type="date" required />
+                </div>
+                <div class="field">
+                  <label for="guests" data-i18n="f_guests">Convives</label>
+                  <input id="guests" name="guests" type="number" min="2" max="200" value="6" required />
+                </div>
+              </div>
+              <div class="field">
+                <label for="details" data-i18n="f_details">Détails (lieu, goûts, allergies, budget, timing)</label>
+                <textarea id="details" name="details" rows="5" required></textarea>
+              </div>
+
+              <button class="btn" type="submit" data-i18n="f_submit">Envoyer la demande</button>
+              <p class="small muted" data-i18n="f_note">
+                Ce site est statique : le bouton ouvre votre application mail avec le message pré-rempli.
+                Plus tard, on pourra brancher un Google Form ou un backend.
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="small muted">© <span id="year"></span> Atelier Sève — <span data-i18n="footer_rights">Tous droits réservés</span>.</p>
+      <div class="footer__links">
+        <a href="#" onclick="openModal('mentions'); return false;" data-i18n="footer_legal">Mentions légales</a>
+        <a href="#" onclick="openModal('privacy'); return false;" data-i18n="footer_privacy">Confidentialité</a>
+      </div>
+    </div>
+  </footer>
+
+  <dialog id="modal" class="modal">
+    <div class="modal__box">
+      <button class="modal__close" onclick="closeModal()" aria-label="Fermer">×</button>
+      <div id="modalContent"></div>
+    </div>
+  </dialog>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FoodEstablishment",
+    "name":"Atelier Sève",
+    "servesCuisine":"Cuisine française contemporaine",
+    "url":""
+  }
+  </script>
+
+  <script src="script.js"></script>
+</body>
+</html>
